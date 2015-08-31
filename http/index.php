@@ -21,27 +21,15 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
-        <section class="heroplates">
-            <div class="heroplates__pane">
-                <svg viewBox="0 0 200 90">
-                    <clipPath id="top">
-                        <polygon points="0,0 198,0 0,147 "/>
-                    </clipPath>
-                    <clipPath id="bottom">
-                        <polygon points="55,105 200,-5 200,90"/>
-                    </clipPath>
-                    <a id="pane-top" xlink:href="#" class="heroplates__link">
-                        <image clip-path="url(#top)" preserveAspectRatio="none" width="100%" height="100%" xlink:href="http://localhost/~mark/heroplates/http/img/heroplate-background_legacy-of-the-void.jpg"/>
-                    </a>
-                    <a id="pane-bottom" xlink:href="#" class="heroplates__link">
-                        <image clip-path="url(#bottom)" preserveAspectRatio="none" width="100%" height="100%" xlink:href="http://localhost/~mark/heroplates/http/img/heroplate-background_world-of-warships.jpg"/>
-                    </a>
-                </svg>
-            </div>           
-        </section>
-
+        
+        <div class="heroplates">
+            <a href="#" class="heroplates__pane heroplates__pane--top">
+                <img class="heroplates__img heroplates__img--top" src="img/heroplate-background_legacy-of-the-void.jpg">
+            </a>
+            <a href="#" class="heroplates__pane heroplates__pane--bottom">
+                <img class="heroplates__img heroplates__img--bottom" src="img/heroplate-background_world-of-warships.jpg">
+            </a>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>

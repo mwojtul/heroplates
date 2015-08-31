@@ -282,10 +282,58 @@ img {
   width: 100%;
 }
 .heroplates {
-  position: relative;
-  width: 100%;
-  padding-bottom: 45%;
   overflow: hidden;
-  color: $white;
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  height: 400px;
+}
+.heroplates__pane {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: skewX(-55.98deg);
+  -moz-transform: skewX(-55.98deg);
+  -ms-transform: skewX(-55.98deg);
+  -o-transform: skewX(-55.98deg);
+  transform: skewX(-55.98deg);
+  transition: all 0.25s ease-in-out;
+}
+.heroplates__pane:first-child {
+  left: -0.25em;
+  transform-origin: 100% 0;
+}
+.heroplates__pane:last-child {
+  right: -0.25em;
+  transform-origin: 0 100%;
+}
+.heroplates__pane--top:hover {
+  width: 120%;
+  z-index: 10;
+}
+.heroplates__pane--bottom:hover {
+  width: 120%;
+}
+.heroplates__pane:after,
+.heroplates__img {
+  -webkit-transform: skewX(55.98deg);
+  -moz-transform: skewX(55.98deg);
+  -ms-transform: skewX(55.98deg);
+  -o-transform: skewX(55.98deg);
+  transform: skewX(55.98deg);
+  transform-origin: inherit;
+}
+.heroplates__img {
+  width: 100%;
+  height: 100%;
+  width: 1920px;
+  position: absolute;
+}
+.heroplates__img--top {
+  left: 0;
+}
+.heroplates__img--bottom {
+  right: 0;
 }
 /* Shame */
