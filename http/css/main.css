@@ -310,13 +310,14 @@ img {
   -webkit-backface-visibility: hidden;
   top: 50%;
   left: 50%;
+  width: 150%;
+  height: 150%;
   border-left: 7px solid #e74a00;
-  transition: ease-in-out 0.35s all;
+  transition: ease 0.5s all;
 }
 .heroplates__pane--bottom:hover {
-  top: 15%;
-  left: 15%;
-  transform: skewX(-55deg) translateX(-15%) translateY(-15%);
+  top: 25%;
+  left: 25%;
 }
 .heroplates__pane-content {
   background-size: cover;
@@ -327,7 +328,7 @@ img {
   -o-transform: skewX(55deg);
   transform: skewX(55deg);
   transform-origin: inherit;
-  width: 100%;
+  width: 75%;
   height: 100%;
 }
 .heroplates p {
