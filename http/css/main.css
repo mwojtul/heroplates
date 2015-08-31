@@ -286,6 +286,7 @@ img {
   width: 100%;
   padding-bottom: 45%;
   overflow: hidden;
+  color: $white;
 }
 .heroplates__pane {
   position: absolute;
@@ -310,6 +311,12 @@ img {
   top: 50%;
   left: 50%;
   border-left: 7px solid #e74a00;
+  transition: ease-in-out 0.35s all;
+}
+.heroplates__pane--bottom:hover {
+  top: 15%;
+  left: 15%;
+  transform: skewX(-55deg) translateX(-15%) translateY(-15%);
 }
 .heroplates__pane-content {
   background-size: cover;
@@ -322,5 +329,11 @@ img {
   transform-origin: inherit;
   width: 100%;
   height: 100%;
+}
+.heroplates p {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
 }
 /* Shame */

@@ -29,7 +29,6 @@
             </div>
             <div class="heroplates__pane heroplates__pane--bottom">
                 <div class="heroplates__pane-content" style="background-image: url(img/heroplate-background_world-of-warships.jpg)">
-
                 </div>
             </div>
         </section>
