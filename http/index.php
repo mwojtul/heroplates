@@ -22,7 +22,17 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        
+        <section class="heroplates">
+            <div class="heroplates__pane" style="background-image: url(img/heroplate-background_legacy-of-the-void.jpg)">
 
+            </div>
+            <div class="heroplates__pane heroplates__pane--bottom">
+                <div class="heroplates__pane-content" style="background-image: url(img/heroplate-background_world-of-warships.jpg)">
+
+                </div>
+            </div>
+        </section>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
