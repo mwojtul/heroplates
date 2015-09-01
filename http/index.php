@@ -13,6 +13,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -23,11 +25,22 @@
         <![endif]-->
         
         <div class="heroplates">
-            <a href="#" class="heroplates__pane heroplates__pane--top">
+            <a href="http://us.battle.net/sc2/en/legacy-of-the-void/" class="heroplates__pane heroplates__pane--top">
                 <img class="heroplates__img" src="img/heroplate-background_legacy-of-the-void.jpg">
+                <div class="cta heroplates__content heroplates__content--top">
+                <h1 class="cta__title">Aliens vs</h1>
+                    <p class="cta__blurb">Some text here lorem ipsum dolor et amet</p>
+                    <div class="cta__btn btn">Fight</div>
+                </div>
             </a>
-            <a href="#" class="heroplates__pane heroplates__pane--bottom">
-                <div class="heroplates__img heroplates__img--bottom" style="background-image: url(img/heroplate-background_world-of-warships.jpg)"></div>
+            <a href="http://worldofwarships.com/" class="heroplates__pane heroplates__pane--bottom">
+                <div class="heroplates__img heroplates__img--bottom" style="background-image: url(img/heroplate-background_world-of-warships.jpg)">
+                    <div class="cta heroplates__content heroplates__content--bottom">
+                        <h1 class="cta__title">Battleships</h1>
+                        <p class="cta__blurb">Some text here lorem ipsum dolor et amet</p>
+                        <div class="cta__btn btn">Fight</div>
+                    </div>
+                </div>
             </a>
         </div>
 

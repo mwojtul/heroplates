@@ -4,21 +4,24 @@
 	margin 0 auto
 	width 100%
 	padding-bottom 46.25%
-
+	color $white
+	
+	a
+		color $white 
+		
 	&__pane
-		
-
-		&:last-child
-			
-		
+		&:hover
+			.cta__btn
+				@extends .btn:hover
 		&--top	
-			&:hover
-				
+			&:hover				
 				+ .heroplates__pane--bottom
-					width 70%
+					width 50%
+				
+					
 
 		&--bottom
-			width 87%
+			width 71%
 			height 100%
 			right -0.25em
 			transform-origin 0 100%
@@ -29,37 +32,72 @@
 			-ms-transform skewX(-55.98deg) 
 			-o-transform skewX(-55.98deg) 
 			transform skewX(-55.98deg) 
-			transition width 0.25s ease-in-out, z-index 1s ease
+			transition width 0.75s ease-in
 			border-left 6px solid $primary
 			-webkit-backface-visibility hidden 		
 			&:hover
-				width 120%
-			
-
-			
-	&__img--bottom
-		-webkit-transform skewX(55.98deg) 
-		-moz-transform skewX(55.98deg) 
-		-ms-transform skewX(55.98deg) 
-		-o-transform skewX(55.98deg) 
-		transform skewX(55.98deg) 
-		transform-origin inherit
-		background-size cover
-		background-position 100%
+				width 110%
 			
 	&__img
 		width 100%
 		height 100%
-		width 1920px
 		position absolute
 		
-		&--top
-			left 0
+	
 
 		&--bottom
-			right 0
+			right 0	
+			-webkit-transform skewX(55.98deg) 
+			-moz-transform skewX(55.98deg) 
+			-ms-transform skewX(55.98deg) 
+			-o-transform skewX(55.98deg) 
+			transform skewX(55.98deg) 
+			transform-origin inherit
+			background-size cover
+			background-position 100%
+			width 1920px
+			
+	
+	&__content
+		position absolute
+		-webkit-transform translateY(-50%)
+		-moz-transform translateY(-50%)
+		-ms-transform translateY(-50%)
+		-o-transform translateY(-50%)
+		transform translateY(-50%)
+		-webkit-font-smoothing antialiased
+		transition position 1s ease-in
+		
 
+		&--top
+			top 50%
+			left 40px
+			
+		&--bottom
+			top 80%
+			right 10px		
+			text-align right
+			
+			+above($mobile)
+				right 20px
+			+above($tablet)
+				top 70%
+				right 40px
 
+	.cta__title
+		+below($tablet)
+			font-size 36px
+		+below($mobile)
+			font-size 24px
+			margin-bottom 0
+			
+	.cta__blurb
+		+below($tablet)
+			display none
 
+	.cta__btn
+		+below($tablet)
+			display none
+	
 
 
