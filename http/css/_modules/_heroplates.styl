@@ -2,47 +2,50 @@
 	overflow hidden
 	position relative
 	margin 0 auto
-	width 700px
-	height 400px
+	width 100%
+	padding-bottom 46.25%
 
 	&__pane
-		width 100%
-		height 100%
-		overflow hidden
-		position absolute		
-		-webkit-transform skewX(-55.98deg) 
-		-moz-transform skewX(-55.98deg) 
-		-ms-transform skewX(-55.98deg) 
-		-o-transform skewX(-55.98deg) 
-		transform skewX(-55.98deg) 
-		transition all 0.25s ease-in-out
-
-		&:first-child
-			left -.25em
-			transform-origin 100% 0
 		
+
 		&:last-child
+			
+		
+		&--top	
+			&:hover
+				
+				+ .heroplates__pane--bottom
+					width 70%
+
+		&--bottom
+			width 87%
+			height 100%
 			right -0.25em
 			transform-origin 0 100%
-		
-		&--top			
-			&:hover
-				width 120%
-				z-index 10
-
-		&--bottom			
+			overflow hidden
+			position absolute		
+			-webkit-transform skewX(-55.98deg) 
+			-moz-transform skewX(-55.98deg) 
+			-ms-transform skewX(-55.98deg) 
+			-o-transform skewX(-55.98deg) 
+			transform skewX(-55.98deg) 
+			transition width 0.25s ease-in-out, z-index 1s ease
+			border-left 6px solid $primary
+			-webkit-backface-visibility hidden 		
 			&:hover
 				width 120%
 			
 
 			
-	&__pane:after, &__img
+	&__img--bottom
 		-webkit-transform skewX(55.98deg) 
 		-moz-transform skewX(55.98deg) 
 		-ms-transform skewX(55.98deg) 
 		-o-transform skewX(55.98deg) 
 		transform skewX(55.98deg) 
 		transform-origin inherit
+		background-size cover
+		background-position 100%
 			
 	&__img
 		width 100%

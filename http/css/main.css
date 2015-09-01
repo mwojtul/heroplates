@@ -285,12 +285,18 @@ img {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  width: 700px;
-  height: 400px;
-}
-.heroplates__pane {
   width: 100%;
+  padding-bottom: 46.25%;
+}
+.heroplates__pane:last-child:hover + .heroplates__pane--bottom,
+.heroplates__pane--top:hover + .heroplates__pane--bottom {
+  width: 70%;
+}
+.heroplates__pane--bottom {
+  width: 87%;
   height: 100%;
+  right: -0.25em;
+  transform-origin: 0 100%;
   overflow: hidden;
   position: absolute;
   -webkit-transform: skewX(-55.98deg);
@@ -298,31 +304,22 @@ img {
   -ms-transform: skewX(-55.98deg);
   -o-transform: skewX(-55.98deg);
   transform: skewX(-55.98deg);
-  transition: all 0.25s ease-in-out;
-}
-.heroplates__pane:first-child {
-  left: -0.25em;
-  transform-origin: 100% 0;
-}
-.heroplates__pane:last-child {
-  right: -0.25em;
-  transform-origin: 0 100%;
-}
-.heroplates__pane--top:hover {
-  width: 120%;
-  z-index: 10;
+  transition: width 0.25s ease-in-out, z-index 1s ease;
+  border-left: 6px solid #e74a00;
+  -webkit-backface-visibility: hidden;
 }
 .heroplates__pane--bottom:hover {
   width: 120%;
 }
-.heroplates__pane:after,
-.heroplates__img {
+.heroplates__img--bottom {
   -webkit-transform: skewX(55.98deg);
   -moz-transform: skewX(55.98deg);
   -ms-transform: skewX(55.98deg);
   -o-transform: skewX(55.98deg);
   transform: skewX(55.98deg);
   transform-origin: inherit;
+  background-size: cover;
+  background-position: 100%;
 }
 .heroplates__img {
   width: 100%;

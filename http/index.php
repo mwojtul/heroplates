@@ -24,10 +24,10 @@
         
         <div class="heroplates">
             <a href="#" class="heroplates__pane heroplates__pane--top">
-                <img class="heroplates__img heroplates__img--top" src="img/heroplate-background_legacy-of-the-void.jpg">
+                <img class="heroplates__img" src="img/heroplate-background_legacy-of-the-void.jpg">
             </a>
             <a href="#" class="heroplates__pane heroplates__pane--bottom">
-                <img class="heroplates__img heroplates__img--bottom" src="img/heroplate-background_world-of-warships.jpg">
+                <div class="heroplates__img heroplates__img--bottom" style="background-image: url(img/heroplate-background_world-of-warships.jpg)"></div>
             </a>
         </div>
 
